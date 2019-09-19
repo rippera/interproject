@@ -65,3 +65,27 @@
     line-height: 40px;
     margin-bottom: 10px;
 }
+
+/*---------------------projects title section-------------*/
+.project_titles-sec {
+    padding: 30px 0;
+}
+
+.project_titles-list {
+    padding-left: 40px;
+}
+
+.acceleration_project {
+    font-family: $font_bold;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.project_titles-list ul li {
+    list-style-type: disc;
+    font-size: 18px;
+    font-family: $font_regular;
+    color: #000000;
+    line-height: 1.5;
+}

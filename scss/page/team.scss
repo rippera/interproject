@@ -1,0 +1,31 @@
+.team_sec {
+    padding: 40px 0;
+    background: #f7f7f7;
+}
+
+.team_box {
+    margin-bottom: 20px;
+}
+
+.team_title {
+    padding: 40px 0;
+    text-align: center;
+    font-family: $font_bold;
+    font-size: 36px;
+}
+
+.profession,
+.name {
+    font-family: 16px;
+    color: #000000;
+    font-family: $font_bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.country {
+    color: #494949;
+    font-size: 14px;
+    font-family: $font_regular;
+    text-transform: capitalize;
+}
