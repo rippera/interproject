@@ -1,0 +1,34 @@
+.footer_ {
+    padding: 40px 0;
+    background: #f7f7f7;
+}
+
+.contact_title {
+    padding-top: 20px;
+    font-family: $font_regular;
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+
+.contact_list-li {
+    font-family: $font_regular;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact_icons {
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.soc_icons {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}

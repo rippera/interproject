@@ -7,6 +7,10 @@
     display: flex;
 }
 
+.align_items_center {
+    align-items: center;
+}
+
 .relative {
     position: relative;
 }
@@ -29,4 +33,13 @@
 
 .show_ {
     display: block !important;
+}
+
+.bar_indicator {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgb(0, 57, 106);
+    width: 0%;
+    height: 4px;
 }

@@ -19,3 +19,24 @@ function selectTabs() {
 tabButtons.forEach(tabButton => {
     tabButton.addEventListener('click', selectTabs);
 });
+
+
+function barIndicator() {
+    var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (scrollTop / height) * 100;
+    document.getElementById("barIndicator").style.width = scrolled + "%";
+}
+
+function scrollAnimation() {
+    let scrollY = window.pageYOffset;
+    if (scrollY > 500) {
+        document.querySelector('.header_fixed').style.top = '0px';
+    } else {
+        document.querySelector('.header_fixed').style.top = '-105px';
+    }
+}
+window.addEventListener('scroll', () => {
+    barIndicator();
+    scrollAnimation();
+});
