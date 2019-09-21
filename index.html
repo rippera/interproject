@@ -13,7 +13,7 @@
 
 <body>
     <div class="bar_indicator" id="barIndicator"></div>
-    <header class="header_">
+    <header class="header_ relative">
         <div class="container">
             <a href="index.html">
                 <div class="header_1-logo">
@@ -24,13 +24,32 @@
             <nav class="nav_">
                 <ul class="nav_ul d-flex">
                     <li class="nav_li"><a href="#">about</a></li>
-                    <li class="nav_li"><a href="#">projects <div><i class="fas fa-sort-down"></i></div></a></li>
+                    <li id="dropMenuParent" class="nav_li">
+                        <a href="#">projects <div><i class="fas fa-sort-down"></i></div>
+                        </a>
+                    </li>
                     <li class="nav_li"><a href="#">partners</a></li>
                     <li class="nav_li"><a href="#">team</a></li>
                     <li class="nav_li"><a href="#">contacts</a></li>
                     <li class="nav_li"><a href="#">language <div><i class="fas fa-sort-down"></i></div></a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="dropdown_menu">
+            <ul class="dropdown_ul relative">
+                <li class="dropdown_li"><a href="#">All projects</a></li>
+                <li class="dropdown_li"><a href="#">Service program for providing 24-hour prompt legal
+                        aid</a></li>
+                <li class="dropdown_li"><a href="#">Product for insurance companies</a></li>
+                <li class="dropdown_li"><a href="#">Products for credit organisation</a></li>
+                <li class="dropdown_li"><a href="#">Mutual real estate investment fund</a></li>
+                <li class="dropdown_li"><a href="#">Product Wealth Management Consultations</a></li>
+                <li class="dropdown_li"><a href="#">Accounting system for planned tax revenues</a></li>
+                <li class="dropdown_li"><a href="#">Products in the automotive transport area</a></li>
+                <li class="dropdown_li"><a href="#">«Real estate abroad»</a></li>
+                <li class="dropdown_li"><a href="#">Acceleration of projects</a></li>
+                <li class="dropdown_li"><a href="#">Project vetting</a></li>
+            </ul>
         </div>
     </header>
     <!-- end header1 -->

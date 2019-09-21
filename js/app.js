@@ -36,6 +36,16 @@ function scrollAnimation() {
         document.querySelector('.header_fixed').style.top = '-105px';
     }
 }
+
+
+document.getElementById('dropMenuParent').addEventListener('mouseenter', () => {
+    document.querySelector('.dropdown_menu').style.display = 'block';
+    document.querySelector('.dropdown_menu').style.opacity = '1';
+});
+document.getElementById('dropMenuParent').addEventListener('mouseleave', () => {
+    document.querySelector('.dropdown_menu').style.opacity = '0';
+    document.querySelector('.dropdown_menu').style.display = 'none';
+});
 window.addEventListener('scroll', () => {
     barIndicator();
     scrollAnimation();
