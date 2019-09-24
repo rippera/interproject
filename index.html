@@ -23,33 +23,36 @@
             <hr>
             <nav class="nav_">
                 <ul class="nav_ul d-flex">
-                    <li class="nav_li"><a href="#">about</a></li>
-                    <li id="dropMenuParent" class="nav_li">
-                        <a href="#">projects <div><i class="fas fa-sort-down"></i></div>
-                        </a>
+                    <li class="nav_li"><a href="#about">about</a></li>
+                    <li class="nav_li current_menu">
+                        <a href="javascript:void(0)">projects<i class="fas fa-sort-down"></i></a>
+                        <div class="dropdown_menu">
+                            <ul class="dropdown_ul relative">
+                                <li class="dropdown_li"><a href="#allProjects">All projects</a></li>
+                                <li class="dropdown_li"><a href="#project">Service program for providing 24-hour prompt
+                                        legal
+                                        aid</a></li>
+                                <li class="dropdown_li"><a href="#strakh">Product for insurance companies</a></li>
+                                <li class="dropdown_li"><a href="#credit">Products for credit organisation</a></li>
+                                <li class="dropdown_li"><a href="#mutual">Mutual real estate investment fund</a></li>
+                                <li class="dropdown_li"><a href="#wealth">Product Wealth Management Consultations</a>
+                                </li>
+                                <li class="dropdown_li"><a href="#tax">Accounting system for planned tax revenues</a>
+                                </li>
+                                <li class="dropdown_li"><a href="#transport">Products in the automotive transport
+                                        area</a></li>
+                                <li class="dropdown_li"><a href="#rent">«Real estate abroad»</a></li>
+                                <li class="dropdown_li"><a href="#expert">Acceleration of projects</a></li>
+                                <li class="dropdown_li"><a href="#expert">Project vetting</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="nav_li"><a href="#">partners</a></li>
-                    <li class="nav_li"><a href="#">team</a></li>
-                    <li class="nav_li"><a href="#">contacts</a></li>
-                    <li class="nav_li"><a href="#">language <div><i class="fas fa-sort-down"></i></div></a></li>
+                    <li class="nav_li"><a href="#partners">partners</a></li>
+                    <li class="nav_li"><a href="#team">team</a></li>
+                    <li class="nav_li"><a href="#contact">contacts</a></li>
+                    <li class="lang_box">language<i class="fas fa-sort-down"></i></li>
                 </ul>
             </nav>
-        </div>
-        <div class="dropdown_menu">
-            <ul class="dropdown_ul relative">
-                <li class="dropdown_li"><a href="#">All projects</a></li>
-                <li class="dropdown_li"><a href="#">Service program for providing 24-hour prompt legal
-                        aid</a></li>
-                <li class="dropdown_li"><a href="#">Product for insurance companies</a></li>
-                <li class="dropdown_li"><a href="#">Products for credit organisation</a></li>
-                <li class="dropdown_li"><a href="#">Mutual real estate investment fund</a></li>
-                <li class="dropdown_li"><a href="#">Product Wealth Management Consultations</a></li>
-                <li class="dropdown_li"><a href="#">Accounting system for planned tax revenues</a></li>
-                <li class="dropdown_li"><a href="#">Products in the automotive transport area</a></li>
-                <li class="dropdown_li"><a href="#">«Real estate abroad»</a></li>
-                <li class="dropdown_li"><a href="#">Acceleration of projects</a></li>
-                <li class="dropdown_li"><a href="#">Project vetting</a></li>
-            </ul>
         </div>
     </header>
     <!-- end header1 -->
@@ -63,15 +66,39 @@
                 </div>
                 <div class="nav_fixed">
                     <ul class="fixed_ul d-flex">
-                        <li class="fixed_li"><a href="#">about</a></li>
-                        <li class="fixed_li d-flex"><a href="#">projects </a>
-                            <div><i class="fas fa-sort-down"></i></div>
+                        <li class="fixed_li"><a href="#about">about</a></li>
+                        <li class="fixed_li d-flex fixed_current_menu"><a href="javascript:void(0)">projects </a>
+                            <i class="fas fa-sort-down"></i>
+                            <div class="dropdown_menu">
+                                <ul class="dropdown_ul relative">
+                                    <li class="dropdown_li"><a href="#allProjects">All projects</a></li>
+                                    <li class="dropdown_li"><a href="#project">Service program for providing 24-hour
+                                            prompt
+                                            legal
+                                            aid</a></li>
+                                    <li class="dropdown_li"><a href="#strakh">Product for insurance companies</a></li>
+                                    <li class="dropdown_li"><a href="#credit">Products for credit organisation</a></li>
+                                    <li class="dropdown_li"><a href="#mutual">Mutual real estate investment fund</a>
+                                    </li>
+                                    <li class="dropdown_li"><a href="#wealth">Product Wealth Management
+                                            Consultations</a>
+                                    </li>
+                                    <li class="dropdown_li"><a href="#tax">Accounting system for planned tax
+                                            revenues</a>
+                                    </li>
+                                    <li class="dropdown_li"><a href="#transport">Products in the automotive transport
+                                            area</a></li>
+                                    <li class="dropdown_li"><a href="#rent">«Real estate abroad»</a></li>
+                                    <li class="dropdown_li"><a href="#expert">Acceleration of projects</a></li>
+                                    <li class="dropdown_li"><a href="#expert">Project vetting</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="fixed_li"><a href="#">partners</a></li>
-                        <li class="fixed_li"><a href="#">team</a></li>
-                        <li class="fixed_li"><a href="#">contacts</a></li>
-                        <li class="fixed_li d-flex"><a href="#">language </a>
-                            <div><i class="fas fa-sort-down"></i></div>
+                        <li class="fixed_li"><a href="#partners">partners</a></li>
+                        <li class="fixed_li"><a href="#team">team</a></li>
+                        <li class="fixed_li"><a href="#contact">contacts</a></li>
+                        <li class="lang_box">language
+                            <i class="fas fa-sort-down"></i>
                         </li>
                     </ul>
                 </div>
@@ -79,6 +106,8 @@
         </div>
     </div>
     <!-- end header2 -->
+
+    <!-- end drop menu -->
     <section class="main_bg">
         <div class="container">
             <div class="globus_box">
@@ -93,7 +122,7 @@
         </div>
     </section>
     <!-- end main bg -->
-    <section class="about_sec">
+    <section id="about" class="about_sec">
         <div class="container">
             <div class="about_title">About us</div>
             <div class="about_intro">
@@ -176,11 +205,11 @@
         </div>
     </section>
     <!-- end about section -->
-    <section class="project_sec">
+    <section id="allProjects" class="project_sec">
         <div class="container">
             <div class="project_main-title">Our projects</div>
             <div class="project_wrappers">
-                <div class="projects_box">
+                <div id="project" class="projects_box">
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="project_box">
@@ -211,7 +240,7 @@
                     </div>
                 </div>
                 <!-- end projects box -->
-                <div class="projects_box">
+                <div id="strakh" class="projects_box">
                     <div class="row">
                         <div class="col-lg-6 mr_auto">
                             <div class="project_box">
@@ -249,7 +278,7 @@
                     </div>
                 </div>
                 <!-- end projects box -->
-                <div class="projects_box">
+                <div id="credit" class="projects_box">
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="project_box">
@@ -297,7 +326,7 @@
                     </div>
                 </div>
                 <!-- end projects box -->
-                <div class="projects_box">
+                <div id="mutual" class="projects_box">
                     <div class="row">
                         <div class="col-lg-6 ">
                             <div class="project_box">
@@ -325,7 +354,7 @@
                     </div>
                 </div>
                 <!-- end projects box -->
-                <div class="projects_box">
+                <div id="wealth" class="projects_box">
                     <div class="row">
                         <div class="col-lg-5 ">
                             <div class="project_box">
@@ -352,7 +381,7 @@
                     </div>
                 </div>
                 <!-- end projects box -->
-                <div class="projects_box">
+                <div id="tax" class="projects_box">
                     <div class="row">
                         <div class="col-lg-6 ">
                             <div class="project_box">
@@ -381,7 +410,7 @@
                     </div>
                 </div>
                 <!-- end projects box -->
-                <div class="projects_box">
+                <div id="transport" class="projects_box">
                     <div class="row">
                         <div class="col-lg-5 ">
                             <div class="project_box">
@@ -411,7 +440,7 @@
                     </div>
                 </div>
                 <!-- end projects box -->
-                <div class="projects_box">
+                <div id="rent" class="projects_box">
                     <div class="row">
                         <div class="col-lg-6 ">
                             <div class="project_box">
@@ -447,7 +476,7 @@
             </div>
         </div>
     </section>
-    <section class="project_titles-sec">
+    <section id="expert" class="project_titles-sec">
         <div class="container">
             <div class="project_titles-wrapper">
                 <div class="row">
@@ -521,7 +550,7 @@
         </div>
     </section>
     <!-- end trusted section -->
-    <section class="partners_sec">
+    <section id="partners" class="partners_sec">
         <div class="container">
             <div class="partners_wrapper">
                 <div class="partners_title">Partners</div>
@@ -694,13 +723,13 @@
         </div>
     </section>
     <!-- end partners section -->
-    <section class="team_sec">
+    <section id="team" class="team_sec">
         <div class="container">
             <div class="team_title">Team</div>
             <div class="team_wrapper">
                 <div class="row">
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="1">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/saolme.png" alt="img">
                             </div>
@@ -712,7 +741,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="2">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/otari.png" alt="img">
                             </div>
@@ -724,7 +753,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="3">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/dali.png" alt="img">
                             </div>
@@ -736,7 +765,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="4">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/tea.png" alt="img">
                             </div>
@@ -748,7 +777,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="5">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/bela.png" alt="img">
                             </div>
@@ -760,7 +789,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="6">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/maia.png" alt="img">
                             </div>
@@ -772,7 +801,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="7">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/vladimir.png" alt="img">
                             </div>
@@ -784,7 +813,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="8">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/irakli.png" alt="img">
                             </div>
@@ -796,7 +825,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="9">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/kiril.png" alt="img">
                             </div>
@@ -808,7 +837,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="10">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/svetlana.png" alt="img">
                             </div>
@@ -820,7 +849,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="11">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/aleksandre.png" alt="img">
                             </div>
@@ -832,7 +861,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="team_box">
+                        <div class="team_box" data-team-id="12">
                             <div class="team_img">
                                 <img class="img_fluid" src="img/team/artur.png" alt="img">
                             </div>
@@ -848,7 +877,7 @@
         </div>
     </section>
     <!-- end team section -->
-    <section class="contact_sec">
+    <section id="contact" class="contact_sec">
         <div class="container">
             <div class="contact_title">Make an enquiry for free-of-charge consultations</div>
             <div class="contact_wrapper">
@@ -905,8 +934,600 @@
         </div>
     </footer>
 
+    <div class="team_info-wrapper">
+        <div class="team_info-box" data-info-id="1">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/saolme.png" alt="img">
+                        </div>
+                        <div class="img_gallery_box d_flex">
+                            <img class="small_img" src="img/team/saolme.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/1.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/2.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/3.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/4.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/5.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/6.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/7.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/8.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/9.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/10.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/12.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/13.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/14.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/15.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/16.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/salome/17.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Advocate</div>
+                        <div class="name">salome Sulakvelidze</div>
+                        <p class="team_info_intro">
+                            Born on 15 April 1983 in Kutaisi, Georgia.
 
+                            In 1998, graduated with distinction from Jacob Gogebashvili Secondary School No. 19.
 
+                            In 1998-2000, studied at and graduated with honours from the KutaisiHumanities Lyceum, the
+                            Foreign Languages Faculty.
+
+                            In 2000-2005,studied at and graduated summa cum laude from the Legal Faculty of the
+                            KutaisiUniversity for Law and Economics.
+
+                            Since 2007,she is member of the Association of Lawyers of Georgia as general counsellor.
+
+                            In 2016,she was awarded the status of juvenile lawyer.
+
+                            In 2016, IRI was awarded the status of trainer in election issues.
+
+                            Since2018, she is member of Imereti Regional Committee for Civil Lawof the Association of
+                            Lawyers of Georgia.
+
+                            In 2007-2018, she was awarded several certificates in European law on civil rights;in the
+                            criminal, civil and administrative fields;in juvenile jurisdiction and legal ethics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="2">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/otari.png" alt="img">
+                        </div>
+                        <div class="img_gallery_box d_flex">
+                            <img class="small_img" src="img/team/otari.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/otari/1.jpg" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/otari/2.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Advocate</div>
+                        <div class="name">Otari Chantouridze</div>
+                        <p class="team_info_intro">
+                            Born on 02 February 1988 in Kutaisi, Georgia.
+
+                            In 2005, graduated from public school No. 7 in Kutaisi.
+
+                            From 2005 to 2010, studied at the Ivane Dzhavakhishvili Tbilisi State University, and in
+                            2010, graduated with a Bachelor's degree from the Law Faculty of this University.
+
+                            During 2010-2012, studied at the Legal Faculty at the Caucasus International University and
+                            graduated with a Master's degree in Private Law.
+
+                            From 2010 – present: member of the Georgian Bar Association in the area of general
+                            specialisation.
+
+                            During 2011-2012, General Manager of the Merani Publishing Company.
+
+                            During 2015-2016, lawyer with N(N)YuL "Special Services".
+
+                            Since 2016, Chief Legal Officer of LLC Ambrela Service Group, a firm for rendering legal
+                            services.
+
+                            Since 2018, member of the GLIP organisation "Georgian Lawyers for an Independent
+                            Profession".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="3">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/dali.png" alt="img">
+                        </div>
+                        <div class="img_gallery_box d_flex">
+                            <img class="small_img" src="img/team/dali.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/1.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/2.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/3.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/4.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/5.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/6.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/7.png" alt="img">
+                            <img class="small_img" src="img/team/teaminfo/dali/8.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Advocate</div>
+                        <div class="name">Dali Sulakvelidze</div>
+                        <p class="team_info_intro">
+                            Higher legal education, Master.
+
+                            Specialty is an economist lawyer.
+
+                            From 1998 to 2005 she was a member of the Bar of Georgia.
+
+                            From 2005 to the present he is a member of the Bar Association of Georgia.
+                            Specialization is criminal law.
+
+                            Passed and received many certificates of local and international importance in various
+                            fields.
+                            At various times she was elected a member of various committees of the Association.
+
+                            Currently, he is co-chairman of the Criminal Law Committee of the Bar Association in the
+                            Imereti region of Georgia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="4">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/tea.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Advocate</div>
+                        <div class="name">Tea Kutaladze</div>
+                        <p class="team_info_intro">
+                            Tea Kutaladze, Georgian national, born in 1997Samtredia, Georgia.
+
+                            In 1994, graduated from I. Gogebashvili secondary school No. 17.
+
+                            In 1999, graduated with an honors degree in Business Law from the Faculty of Law at the
+                            Ivane Dzhavakhishvili Law Institute in Batumi.
+
+                            On 18 July 1999, by decision of the State Examination Commission, she was awarded the
+                            qualification of lawyer in economics.
+
+                            On 24.06.2010, passed the lawyers' qualification test in criminal law.
+
+                            On 13.12.2010, passed the qualification test in civil law.
+
+                            In 2011, attended the seminar "Basic elements of financial law and tax disputes" organised
+                            by the Training Centre for Lawyers.
+
+                            In 2012, was awarded a certificate for "Participating in a training program in professional
+                            ethics of lawyers within the framework of extended legal education".
+
+                            On 10.04.2013, was awarded a certificate for participating in the "Substantiation of court
+                            decisions in criminal cases" training program.
+
+                            In 2014, was awarded the certificate for participating in the "Securing claims" training
+                            program.
+
+                            In 2015, was awarded the certificate for participating in the "Recognition and enforcement
+                            of international decisions" training program.
+
+                            In 2016, under No. 4985, underwent special training in the subject: "Juvenile justice,
+                            psychology and methodology of dealing with minors".
+
+                            Having passed the training program and the relevant tests, was awarded the specialist lawyer
+                            status.
+
+                            From 2010 – present: general specialisation lawyer in Georgia.
+
+                            Married, has two children.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="5">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/bela.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Advocate</div>
+                        <div class="name">Bela Tagiashvili</div>
+                        <p class="team_info_intro">
+                            Name, surname: Bella Tagiashvili, born on 14 October 1974 in the town of Akhmeta. In 1996,
+                            graduated from the Faculty of International Economic Relations of the Georgian Technical
+                            University with a Bachelor's degree.
+
+                            In 2010, graduated from the Faculty of Social Sciences of the Tbilisi National University
+                            with a Master's degree in legal science.
+
+                            Employment history: 2012 – present: member of the YuLPP Bar Association, general practice
+                            lawyer; 2012-2013, lawyer with the Migriuli & Partners Law Bureau; 2010-2012, Senior
+                            Specialist with the Personnel Department of LLC Railway Car Manufacturing Company;
+                            2005-2010, Financier with the LLC Railway Car Manufacturing Company; 1999-2005, Assistant to
+                            the Director General, Office Head at JSC Electric Railway Car Repair Plant. Language
+                            proficiency: Georgian, Russian and English (oral). Married, one child. Place of employment:
+                            Tbilisi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="6">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/maia.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Advocate</div>
+                        <div class="name">Maia Paichadze</div>
+                        <p class="team_info_intro">
+                            Maia Paichadze was born on 23 August 1969. Education – higher; graduated cum laude from the
+                            Legal Faculty of the Ivane Dzhavakhishvili Tbilisi State University with a major in legal
+                            science. 1999-2005, member of the Georgian Bar Association. Lawyer. Head of Law Bureau. 2006
+                            – present: founder of Society of Joint Liability Law Firm Maia Paichadze & Co. Georgian Bar
+                            Association, Director, general practice lawyer. Place of employment: Tbilisi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="7">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/vladimir.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Jurist</div>
+                        <div class="name">Vladimir Khionidi</div>
+                        <p class="team_info_intro">
+                            Khionidi Vladimir Il'ich, born on 24.07.1959 in Sukhumi, Georgian S.S.R.
+
+                            In 1976, graduated with honors from a secondary school in Tbilisi.
+
+                            In 1981, graduated cum laude from the Faculty of Law at the M.V. Lomonosov Moscow State
+                            University with a law degree in legal science.
+
+                            During 1981-1992, worked in executive positions in the Procurator's Office of the Georgian
+                            S.S.R.
+
+                            1992 – present, has been working in different commercial entities (including foreign ones)
+                            as business area manager.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="8">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/irakli.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Jurist</div>
+                        <div class="name">Irakliy Kvelidze</div>
+                        <p class="team_info_intro">
+                            Kvelidze Iraklii Georgievich was born on 12 September 1959 in the city of Sukhumi, the
+                            Georgian SSR.
+                            In 1976, graduated from a secondary education school in Tbilisi and, in the same year, was
+                            enrolled to the Legal Faculty of the M.V. Lomonosov Moscow University.
+                            Having graduated from this University, for eleven years was in positions of responsibility
+                            in the procurator bodies of the Georgian SSR and RSFSR, and afterwards was manager of
+                            foreign commercial entities on Moscow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="9">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/kiril.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Jurist</div>
+                        <div class="name">Kirill Erokhin</div>
+                        <p class="team_info_intro">
+                            Born on 08.10.1963 in Moscow.
+
+                            Graduated from the Law Faculty of the M.V. Lomonosov Moscow State University where he
+                            studied from 1980 to 1985. Majored in legal science with a specialty in criminology.
+
+                            1985 to 1990 – employed by government agencies: State R&D Inst. for Civil Aviation,
+                            engineer, Legal Department, international flight safety issues, Secretary of International
+                            Civil Aviation Organisation (ICAO) – 1985 to 1988.
+
+                            Sheremetievo Airport Customs Office – Inspector from 1988 to 1989.
+
+                            1990-1991: State Customs Committee of the U.S.S.R., Legal Directorate.
+
+                            1991 to 1996, employed by different commercial entities.
+
+                            1996 to 2013, a position with the Prefecture of the Eastern Administrative District of
+                            Moscow; was awarded a civil service rank – Counsellor 1 stclass, RF Civil Service in Moscow.
+                            Was awarded a medal in commemoration of the 850 thAnniversary of Moscow. Has different
+                            awards and decorations from the city administration and government agencies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="10">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/svetlana.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Economist</div>
+                        <div class="name">Svetlana Matveeva</div>
+                        <p class="team_info_intro">
+                            MatveevaSvetlanaworksinthefinancialsector,dealingwithriskmanagementissuesformorethan10
+                            years. In the IPC Svetlana provides advice on the management of operational, credit and
+                            market risks, as well as methodological issues of risk management.
+
+                            Matveeva Svetlana holds an honors degree in finances and credit from the Moscow Energy
+                            Institute as of 2006. In 2008, she was awarded a professional certificate series 1.0 in the
+                            financial market. She regularly extends her qualification in risk management. Since 2014,
+                            she is member of the committee for introducing risk management techniques. In 2017, she was
+                            awarded a professional certificate series 7.0 in the financial market, having thereby
+                            confirmed her compliance with the qualification requirements established by the Bank of
+                            Russia. She meets all the requirements to business reputation established by the regulator
+                            and is a regular participant in professional summits on applying the best practices in risk
+                            management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="11">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/aleksandre.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Economist</div>
+                        <div class="name">Aleksandr Krutikov</div>
+                        <p class="team_info_intro">
+                            Born on 19 July 1979 in Kursk, Russia.
+
+                            Education – I.I. Ivanov Kursk State Agricultural Academy.
+
+                            Faculty: Accounting, audit and analysis, 2003
+
+                            Employment term: 18 years
+
+                            Married, two children.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team_info-box" data-info-id="12">
+            <div class="cancel"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slider_block">
+                        <div class="main_img">
+                            <img class="img_fluid" src="img/team/artur.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team_info">
+                        <div class="profession">Programmer</div>
+                        <div class="name">Artur Cherkezyan</div>
+                        <p class="team_info_intro">
+                            Born on 29 July 1985 in Tbilisi, Georgia.
+
+                            In 2002, graduated from Tbilisi Secondary School No. 95.
+
+                            2004 to 2009, studied at the Loris Kalashian Armenian Open University with a major in
+                            software for computers and automated systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ec24ca5908.js"></script>
     <script src="js/app.js"></script>
 

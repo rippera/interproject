@@ -5,6 +5,7 @@
 
 .team_box {
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .team_title {
@@ -16,7 +17,7 @@
 
 .profession,
 .name {
-    font-family: 16px;
+    font-size: 16px;
     color: #000000;
     font-family: $font_bold;
     margin-bottom: 10px;

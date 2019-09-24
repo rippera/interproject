@@ -36,17 +36,54 @@ function scrollAnimation() {
         document.querySelector('.header_fixed').style.top = '-105px';
     }
 }
-
-
-document.getElementById('dropMenuParent').addEventListener('mouseenter', () => {
-    document.querySelector('.dropdown_menu').style.display = 'block';
-    document.querySelector('.dropdown_menu').style.opacity = '1';
-});
-document.getElementById('dropMenuParent').addEventListener('mouseleave', () => {
-    document.querySelector('.dropdown_menu').style.opacity = '0';
-    document.querySelector('.dropdown_menu').style.display = 'none';
-});
 window.addEventListener('scroll', () => {
     barIndicator();
     scrollAnimation();
+});
+// $('.dropdown_li a').each(function () {
+//     $(this).on('click', () => {
+//         $('html, body').animate({
+//             scrollTop: $('html, body').offset().top
+//         }, 500);
+//     });
+// })
+$('.current_menu').on('click', function () {
+    $('.current_menu .dropdown_menu').toggleClass('show_');
+});
+$('.fixed_current_menu').on('click', function () {
+    $('.fixed_current_menu .dropdown_menu').toggleClass('show_');
+});
+const smallImgs = document.querySelectorAll('.small_img');
+const mainImgs = document.querySelectorAll('.main_img img');
+
+function gallery(item) {
+    item.addEventListener('click', (e) => {
+        let imgLocation = e.target.getAttribute('src');
+        mainImgs.forEach(mainImg => {
+            mainImg.src = imgLocation;
+        });
+    });
+}
+smallImgs.forEach(item => {
+    gallery(item);
+});
+let teamBoxs = document.querySelectorAll('.team_box');
+let teamInfoBoxs = document.querySelectorAll('.team_info-box');
+teamBoxs.forEach(teamBox => {
+    teamBox.addEventListener('click', () => {
+        let teamBoxId = teamBox.getAttribute('data-team-id');
+        teamInfoBoxs.forEach(teamInfoBox => {
+            let teamInfoBoxId = teamInfoBox.getAttribute('data-info-id');
+            if (teamBoxId == teamInfoBoxId) {
+                teamInfoBox.style.display = 'block';
+            }
+        });
+    });
+});
+document.querySelectorAll('.cancel').forEach(cancellBtn => {
+    cancellBtn.addEventListener('click', () => {
+        teamInfoBoxs.forEach(item => {
+            item.style.display = 'none';
+        });
+    });
 });
