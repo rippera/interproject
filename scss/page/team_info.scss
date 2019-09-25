@@ -4,16 +4,23 @@
     height: 100%;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
     z-index: 12000;
     background: #fff;
     padding: 40px;
     overflow-y: scroll;
     display: none;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
+
+    .row {
+        opacity: 0;
+        transform: translateY(70px);
+        transition: all .4s linear;
+    }
 }
 
-.team_info-box::-webkit-scrollbar {
-    display: none;
-}
 
 .main_img {
     height: 455px;
@@ -56,4 +63,13 @@
     font-family: $font_regular;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.popup_active {
+    opacity: 1 !important;
+}
+
+.popup_child_active {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
 }

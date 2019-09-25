@@ -1,0 +1,56 @@
+.spokad_sec {
+    padding-bottom: 40px;
+}
+
+.spokad_title {
+    padding-top: 45px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    line-height: 1.23;
+    font-family: $font_bold;
+    text-align: center;
+}
+
+.spokad_main_img {
+    height: 345px;
+}
+
+#spokad .img_gallery_box {
+    width: 30%;
+    margin: 10px auto auto auto;
+}
+
+#spokadinge .img_gallery_box {
+    width: 65%;
+    margin: 10px auto auto auto;
+}
+
+.spokad_name {
+    font-size: 24px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+    font-family: $font_bold;
+}
+
+.spokad_desc {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: #000;
+    font-family: $font_regular;
+}
+
+.home {
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #ba7d43;
+    border-radius: 30px;
+    height: 45px;
+    font-size: 14px;
+    font-family: "Roboto B";
+    width: 140px;
+    text-align: center;
+    padding: 16px 30px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
