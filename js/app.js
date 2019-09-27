@@ -46,13 +46,6 @@ if (homePage) {
         barIndicator();
         scrollAnimation();
     });
-    // $('a').each(function () {
-    //     $(this).on('click', () => {
-    //         $('html, body').animate({
-    //             scrollTop: $('html, body').offset().top
-    //         }, 500);
-    //     });
-    // })
     $('.current_menu').on('click', function () {
         $('.current_menu .dropdown_menu').toggleClass('show_');
     });
@@ -156,6 +149,7 @@ if (homePage) {
     document.querySelectorAll('.mob_li').forEach(liElem => {
         liElem.addEventListener('click', () => {
             document.querySelector('.mobile_header_block').classList.remove('mob_active');
+            document.querySelector('.burger').classList.remove('open_burger');
         });
     });
     document.querySelectorAll('.request_btn').forEach(reqBtn => {

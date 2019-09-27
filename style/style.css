@@ -52,7 +52,8 @@ body {
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 100; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
