@@ -1,0 +1,170 @@
+@media screen and (max-width:980px) {
+    .header_ {
+        display: none;
+    }
+
+    .mobile_header {
+        display: block;
+    }
+
+    .about_intro {
+        width: 100%;
+    }
+
+    #transport .row,
+    #wealth .row,
+    #credit .row,
+    #project .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .project_titles-box:first-child {
+        margin-top: 50px;
+    }
+
+    .counters_wrapper {
+        flex-direction: column;
+    }
+
+    .trusted_wrapper {
+        padding-top: 45px;
+    }
+
+    .trusted_title {
+        margin-bottom: 40px;
+    }
+
+    .counter_num {
+        font-size: 62px;
+    }
+
+    .close {
+        right: 75px;
+    }
+
+    .partners_names {
+        ul {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 20px;
+
+                &.active::after {
+                    bottom: -10px;
+                }
+            }
+        }
+    }
+
+    .line_wrapper {
+        width: 640px;
+
+        .line2 {
+            min-width: 240px;
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .main_bg {
+        height: 545px;
+    }
+
+    .main_img {
+        height: 300px;
+    }
+
+    .globus_box {
+        width: 160px;
+    }
+
+    .main_title {
+        font-size: 18px;
+    }
+
+    .about_title {
+        font-size: 28px;
+
+        &::after {
+            bottom: -30px;
+            width: 60px;
+        }
+    }
+
+    .about_intro {
+        font-size: 16px;
+        margin: 25px auto auto auto;
+    }
+
+    .about_block-wrapper {
+        padding-top: 65px;
+    }
+
+    .about_blocks {
+        margin-bottom: 40px;
+    }
+
+    .line_wrapper {
+        width: 440px;
+        display: none !important;
+    }
+
+    .project_main-title {
+        padding-top: 0px;
+        font-size: 34px;
+    }
+
+    .project_wrappers {
+        padding-top: 30px;
+    }
+
+    .read_more_title {
+        font-size: 16px;
+    }
+
+    .read_more_popup {
+        width: 100%;
+    }
+
+    #estate .read_more_popup,
+    #wealth .read_more_popup,
+    #pif .read_more_popup,
+    #creditge .read_more_popup,
+    #creditprocess .read_more_popup,
+    #creditquality .read_more_popup,
+    #intinsurance .read_more_popup,
+    #insurance .read_more_popup {
+        width: 100%;
+        padding: 25px 25px;
+    }
+
+    .check_svg svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .trusted_title {
+        font-size: 30px;
+    }
+
+    .counter_num {
+        font-size: 32px;
+    }
+
+    .trusted_sec {
+        height: 355px;
+    }
+
+    .partners_title {
+        font-size: 29px;
+        padding: 0px 0 30px 0;
+    }
+
+    .team_sec {
+        padding: 0px;
+    }
+
+    .team_title {
+        padding: 10px 0;
+    }
+}

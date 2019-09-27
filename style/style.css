@@ -2,6 +2,9 @@ html,
 body {
   scroll-behavior: smooth; }
 
+* {
+  -webkit-overflow-scrolling: touch; }
+
 .img_fluid {
   width: 100%;
   height: 100%; }
@@ -41,6 +44,15 @@ body {
   background: #00396a;
   width: 0%;
   height: 4px; }
+
+.go_top {
+  position: fixed;
+  bottom: -60px;
+  left: 10px;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  cursor: pointer; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -232,14 +244,16 @@ a {
       display: inline-block;
       margin-top: 4px; }
 
-.lang_box {
+.lang_box_parent {
   padding: 0px 15px;
   font-family: "Roboto B";
   color: #121111;
   font-size: 20px;
   font-weight: 500;
-  text-transform: capitalize; }
-  .lang_box i {
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer; }
+  .lang_box_parent i {
     color: #121111;
     font-size: 12px;
     margin-left: 10px;
@@ -291,6 +305,36 @@ a {
   line-height: 1.5;
   margin-bottom: 10px; }
 
+.dropdown_lang {
+  position: absolute;
+  bottom: -155px;
+  background: #fff;
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  display: none; }
+
+.lang_box {
+  position: relative;
+  padding-top: 12px; }
+  .lang_box li {
+    font-family: "Roboto R";
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 12px; }
+  .lang_box::after {
+    content: '';
+    left: 30px;
+    top: -20px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 12;
+    border-width: 0px 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent; }
+
 .header_fixed {
   padding: 5px 0;
   background: #f7f7f7;
@@ -340,6 +384,103 @@ a {
     margin-left: 10px;
     vertical-align: top;
     display: inline-block; }
+
+.mobile_header {
+  background: #000;
+  width: 100%;
+  height: 50px; }
+
+.mobile_header {
+  display: none; }
+
+.burger {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  z-index: 23;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  margin: auto 0px 0px auto;
+  top: 14px; }
+  .burger .line_1 {
+    position: absolute;
+    height: 3px;
+    width: 70%;
+    background: #fff;
+    left: 0;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+  .burger .line_2 {
+    top: 10px;
+    width: 55%;
+    position: absolute;
+    background: #ffffff;
+    height: 3px;
+    margin-left: 7px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+  .burger .line_3 {
+    top: 20px;
+    width: 70%;
+    position: absolute;
+    background: #ffffff;
+    height: 3px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+  .burger.open_burger .line_1 {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: 15px;
+    background: #ffffff; }
+  .burger.open_burger .line_2 {
+    height: 0px; }
+  .burger.open_burger .line_3 {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -5px;
+    background: #ffffff; }
+
+.mobile_header_block {
+  background: #ffffff;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+  .mobile_header_block.mob_active {
+    height: 475px;
+    opacity: 1;
+    visibility: visible; }
+  .mobile_header_block .header_1-logo {
+    margin-bottom: 75px;
+    padding-top: 30px; }
+  .mobile_header_block .nav_ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .mobile_header_block li {
+    line-height: 2; }
+  .mobile_header_block .lang_box_parent i {
+    margin-top: 13px; }
+  .mobile_header_block .nav_li a i {
+    margin-top: 13px; }
+
+.mobile_nav {
+  padding: 35px; }
+  .mobile_nav .lang_box li {
+    margin-bottom: 0px;
+    line-height: 1.5; }
+  .mobile_nav .dropdown_lang {
+    bottom: -125px; }
 
 .main_bg {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/main_bg.jpg");
@@ -1014,3 +1155,105 @@ a {
   padding: 16px 30px;
   margin-bottom: 30px;
   text-transform: capitalize; }
+
+@media screen and (max-width: 980px) {
+  .header_ {
+    display: none; }
+  .mobile_header {
+    display: block; }
+  .about_intro {
+    width: 100%; }
+  #transport .row,
+  #wealth .row,
+  #credit .row,
+  #project .row {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; }
+  .project_titles-box:first-child {
+    margin-top: 50px; }
+  .counters_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .trusted_wrapper {
+    padding-top: 45px; }
+  .trusted_title {
+    margin-bottom: 40px; }
+  .counter_num {
+    font-size: 62px; }
+  .close {
+    right: 75px; }
+  .partners_names ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .partners_names ul li {
+      margin-bottom: 20px; }
+      .partners_names ul li.active::after {
+        bottom: -10px; }
+  .line_wrapper {
+    width: 640px; }
+    .line_wrapper .line2 {
+      min-width: 240px; } }
+
+@media screen and (max-width: 560px) {
+  .main_bg {
+    height: 545px; }
+  .main_img {
+    height: 300px; }
+  .globus_box {
+    width: 160px; }
+  .main_title {
+    font-size: 18px; }
+  .about_title {
+    font-size: 28px; }
+    .about_title::after {
+      bottom: -30px;
+      width: 60px; }
+  .about_intro {
+    font-size: 16px;
+    margin: 25px auto auto auto; }
+  .about_block-wrapper {
+    padding-top: 65px; }
+  .about_blocks {
+    margin-bottom: 40px; }
+  .line_wrapper {
+    width: 440px;
+    display: none !important; }
+  .project_main-title {
+    padding-top: 0px;
+    font-size: 34px; }
+  .project_wrappers {
+    padding-top: 30px; }
+  .read_more_title {
+    font-size: 16px; }
+  .read_more_popup {
+    width: 100%; }
+  #estate .read_more_popup,
+  #wealth .read_more_popup,
+  #pif .read_more_popup,
+  #creditge .read_more_popup,
+  #creditprocess .read_more_popup,
+  #creditquality .read_more_popup,
+  #intinsurance .read_more_popup,
+  #insurance .read_more_popup {
+    width: 100%;
+    padding: 25px 25px; }
+  .check_svg svg {
+    width: 40px !important;
+    height: 40px !important; }
+  .trusted_title {
+    font-size: 30px; }
+  .counter_num {
+    font-size: 32px; }
+  .trusted_sec {
+    height: 355px; }
+  .partners_title {
+    font-size: 29px;
+    padding: 0px 0 30px 0; }
+  .team_sec {
+    padding: 0px; }
+  .team_title {
+    padding: 10px 0; } }

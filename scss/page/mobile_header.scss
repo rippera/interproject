@@ -1,0 +1,122 @@
+.mobile_header {
+    background: #000;
+    width: 100%;
+    height: 50px;
+}
+
+.mobile_header {
+    display: none;
+}
+
+.burger {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    z-index: 23;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    margin: auto 0px 0px auto;
+    top: 14px;
+
+    .line_1 {
+        position: absolute;
+        height: 3px;
+        width: 70%;
+        background: #fff;
+        left: 0;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    .line_2 {
+        top: 10px;
+        width: 55%;
+        position: absolute;
+        background: #ffffff;
+        height: 3px;
+        margin-left: 7px;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    .line_3 {
+        top: 20px;
+        width: 70%;
+        position: absolute;
+        background: #ffffff;
+        height: 3px;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    &.open_burger {
+        .line_1 {
+            transform: rotate(45deg);
+            margin-top: 15px;
+            background: #ffffff;
+        }
+
+        .line_2 {
+            height: 0px;
+        }
+
+        .line_3 {
+            transform: rotate(-45deg);
+            margin-top: -5px;
+            background: #ffffff;
+        }
+    }
+}
+
+.mobile_header_block {
+    background: #ffffff;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+
+    &.mob_active {
+        height: 475px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_1-logo {
+        margin-bottom: 75px;
+        padding-top: 30px;
+    }
+
+    .nav_ul {
+        flex-direction: column;
+    }
+
+    li {
+        line-height: 2;
+    }
+
+    .lang_box_parent i {
+        margin-top: 13px;
+    }
+
+    .nav_li a i {
+        margin-top: 13px;
+    }
+}
+
+.mobile_nav {
+    padding: 35px;
+
+    .lang_box li {
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+    .dropdown_lang {
+        bottom: -125px;
+    }
+}
