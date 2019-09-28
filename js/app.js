@@ -45,6 +45,7 @@ if (homePage) {
     window.addEventListener('scroll', () => {
         barIndicator();
         scrollAnimation();
+        scrollNav();
     });
     $('.current_menu').on('click', function () {
         $('.current_menu .dropdown_menu').toggleClass('show_');
@@ -166,6 +167,38 @@ if (homePage) {
             });
         });
     });
+
+    function removScrollActive() {
+        let navLi = document.querySelectorAll('.fixed_li');
+        navLi.forEach(item => {
+            item.classList.remove('fix_li_active')
+        });
+    }
+
+    function scrollNav() {
+        let navLi = document.querySelectorAll('.fixed_li');
+        let aboutSection = document.querySelector('.about_sec');
+        let partnersSection = document.querySelector('.partners_sec');
+        let teamSection = document.querySelector('.team_sec');
+        let contactSection = document.querySelector('.contact_sec');
+        let scrollYtop = window.pageYOffset;
+        if (scrollYtop >= aboutSection.offsetTop - 100 && scrollYtop <= partnersSection.offsetTop - 100) {
+            removScrollActive();
+            navLi[0].classList.add('fix_li_active');
+        }
+        if (scrollYtop >= partnersSection.offsetTop - 100 && scrollYtop <= teamSection.offsetTop - 100) {
+            removScrollActive();
+            navLi[2].classList.add('fix_li_active');
+        }
+        if (scrollYtop >= teamSection.offsetTop - 100 && scrollYtop <= contactSection.offsetTop - 100) {
+            removScrollActive();
+            navLi[3].classList.add('fix_li_active');
+        }
+        if (scrollYtop >= contactSection.offsetTop - 100) {
+            removScrollActive();
+            navLi[4].classList.add('fix_li_active');
+        }
+    }
 }
 if (spokad) {
     const smallImgs = document.querySelectorAll('#spokad .small_img');
@@ -174,13 +207,23 @@ if (spokad) {
     function gallery(item) {
         item.addEventListener('click', (e) => {
             let imgLocation = e.target.getAttribute('src');
-            // mainImgs.forEach(mainImg => {
             mainImgs.src = imgLocation;
-            // });
         });
     }
     smallImgs.forEach(item => {
         gallery(item);
+    });
+    document.querySelector('.spokad_main_img').addEventListener('click', e => {
+        let openedImg = document.querySelector('.img_gallery_parent img');
+        let imgLocation = e.target.getAttribute('src');
+        document.querySelector('.light_box').style.display = 'block';
+        openedImg.src = imgLocation;
+        openedImg.classList.add('img_fluid');
+        document.body.style.overflow = 'hidden';
+    })
+    document.querySelector('.light_box .close').addEventListener('click', () => {
+        document.querySelector('.light_box').style.display = 'none';
+        document.body.style.overflow = 'auto';
     });
 }
 if (spokadInge) {
@@ -195,5 +238,17 @@ if (spokadInge) {
     }
     smallImgs.forEach(item => {
         gallery(item);
+    });
+    document.querySelector('.spokad_main_img').addEventListener('click', e => {
+        let openedImg = document.querySelector('.img_gallery_parent img');
+        let imgLocation = e.target.getAttribute('src');
+        document.querySelector('.light_box').style.display = 'block';
+        openedImg.src = imgLocation;
+        openedImg.classList.add('img_fluid');
+        document.body.style.overflow = 'hidden';
+    })
+    document.querySelector('.light_box .close').addEventListener('click', () => {
+        document.querySelector('.light_box').style.display = 'none';
+        document.body.style.overflow = 'auto';
     });
 }

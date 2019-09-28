@@ -366,11 +366,13 @@ a {
   margin-left: 120px; }
 
 .fixed_li {
-  padding: 0px 15px;
+  margin: 0px 15px;
   font-family: "Roboto B";
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .fixed_li.fix_li_active {
+    border-bottom: 1px solid #0000FF; }
   .fixed_li:last-child {
     padding-right: 0px; }
   .fixed_li a {
@@ -1121,6 +1123,9 @@ a {
 
 .spokad_main_img {
   height: 345px; }
+  .spokad_main_img img {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
 
 #spokad .img_gallery_box {
   width: 30%;
@@ -1156,6 +1161,30 @@ a {
   padding: 16px 30px;
   margin-bottom: 30px;
   text-transform: capitalize; }
+
+.light_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 50;
+  padding: 10px 20px;
+  display: none;
+  overflow-y: scroll; }
+  .light_box .close {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 100000; }
+    .light_box .close svg g {
+      fill: #000000; }
+
+.img_gallery_parent {
+  width: 80%;
+  margin: auto; }
 
 @media screen and (max-width: 980px) {
   .header_ {
@@ -1257,4 +1286,8 @@ a {
   .team_sec {
     padding: 0px; }
   .team_title {
-    padding: 10px 0; } }
+    padding: 10px 0; }
+  #spokad .img_gallery_box,
+  #spokadinge .img_gallery_box {
+    width: 100%;
+    margin-bottom: 10px; } }

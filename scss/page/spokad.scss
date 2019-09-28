@@ -13,6 +13,10 @@
 
 .spokad_main_img {
     height: 345px;
+
+    img {
+        cursor: zoom-in;
+    }
 }
 
 #spokad .img_gallery_box {
@@ -53,4 +57,34 @@
     padding: 16px 30px;
     margin-bottom: 30px;
     text-transform: capitalize;
+}
+
+.light_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 50;
+    padding: 10px 20px;
+    display: none;
+    overflow-y: scroll;
+
+    .close {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 100000;
+
+        svg g {
+            fill: #000000;
+        }
+    }
+}
+
+.img_gallery_parent {
+    width: 80%;
+    margin: auto;
 }

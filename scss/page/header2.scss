@@ -25,9 +25,13 @@
 }
 
 .fixed_li {
-    padding: 0px 15px;
+    margin: 0px 15px;
     font-family: $font_bold;
     align-items: center;
+
+    &.fix_li_active {
+        border-bottom: 1px solid #0000FF;
+    }
 
     &:last-child {
         padding-right: 0px;
